@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Devices" representedClassName="InventoryManagement1.Devices" syncable="YES">
+        <attribute name="createdDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="serialNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="devicesToUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Login" inverseName="userToDevices" inverseEntity="Login" syncable="YES"/>
+    </entity>
+    <entity name="Login" representedClassName="InventoryManagement1.Login" syncable="YES">
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="userToDevices" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Devices" inverseName="devicesToUser" inverseEntity="Devices" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Login" positionX="-54" positionY="-9" width="128" height="90"/>
+        <element name="Devices" positionX="-54" positionY="9" width="128" height="105"/>
+    </elements>
+</model>
