@@ -224,6 +224,109 @@
             </objects>
             <point key="canvasLocation" x="2811" y="-65"/>
         </scene>
+        <!--History Detail View Controller-->
+        <scene sceneID="a9f-xk-8U8">
+            <objects>
+                <viewController id="TC5-hm-hov" customClass="HistoryDetailViewController" customModule="InventoryManagement1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0NI-SD-M6e"/>
+                        <viewControllerLayoutGuide type="bottom" id="ktW-2B-tF3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iAX-xE-Ujc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello!!!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8co-9W-JXx">
+                                <rect key="frame" x="346" y="260" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8co-9W-JXx" firstAttribute="top" secondItem="0NI-SD-M6e" secondAttribute="bottom" constant="242" id="3Dy-4m-P5C"/>
+                            <constraint firstItem="8co-9W-JXx" firstAttribute="leading" secondItem="iAX-xE-Ujc" secondAttribute="leading" constant="260" id="hhK-zC-FQg"/>
+                            <constraint firstItem="ktW-2B-tF3" firstAttribute="top" secondItem="8co-9W-JXx" secondAttribute="bottom" constant="268" id="qLe-zJ-HoD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LrB-N4-qXZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2818" y="1283"/>
+        </scene>
+        <!--Device History-->
+        <scene sceneID="Vun-ju-Uc9">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="Nay-aH-Tj3" customClass="MasterHistoryViewController" customModule="InventoryManagement1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="HYn-zd-w4P">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="HistoryCellId" id="SjO-Wo-SO5" customClass="HistoryCell" customModule="InventoryManagement1" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SjO-Wo-SO5" id="LBe-ut-Ffs">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tech's History" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daz-b5-bd3">
+                                            <rect key="frame" x="28" y="11" width="130" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="historyItem" destination="daz-b5-bd3" id="01t-mD-u1h"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Nay-aH-Tj3" id="Gqx-Nj-2Mr"/>
+                            <outlet property="delegate" destination="Nay-aH-Tj3" id="Kl5-EY-OCo"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Device History" id="eAg-dI-kqW"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GQz-ik-Zhx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3638" y="621"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PKh-TG-gK3">
+            <objects>
+                <navigationController id="I6I-Je-7Ls" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ep6-Sq-IiE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Nay-aH-Tj3" kind="relationship" relationship="rootViewController" id="j1R-AV-mNf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JmL-XU-YFJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2818" y="621"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="Tc5-el-7gM">
+            <objects>
+                <splitViewController id="wdB-zz-mLi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="History" image="Mark As Favourite Filled-50" id="E3L-Bb-mCA"/>
+                    <connections>
+                        <segue destination="I6I-Je-7Ls" kind="relationship" relationship="masterViewController" id="igt-HN-NLs"/>
+                        <segue destination="TC5-hm-hov" kind="relationship" relationship="detailViewController" id="qYB-0G-SJc"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MHZ-iX-Day" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1998" y="953"/>
+        </scene>
         <!--Device Details-->
         <scene sceneID="uqd-Yg-Vvr">
             <objects>
@@ -260,13 +363,14 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="NqX-SA-eQd" firstAttribute="top" secondItem="qiU-vR-QLd" secondAttribute="bottom" constant="100" id="BIX-k3-d6u"/>
                             <constraint firstItem="NqX-SA-eQd" firstAttribute="leading" secondItem="e7X-O5-yVh" secondAttribute="leadingMargin" constant="100" id="edW-K8-igo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NqX-SA-eQd" secondAttribute="trailing" constant="100" id="fr4-Hl-auO"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="m6W-eR-3vt"/>
+                    <navigationItem key="navigationItem" title="Device Details" id="m6W-eR-3vt"/>
                     <connections>
                         <outlet property="serialNumber" destination="zMw-il-Xxx" id="vVz-fH-Np6"/>
                     </connections>
@@ -401,6 +505,7 @@
                     <connections>
                         <segue destination="MGF-Pv-09t" kind="relationship" relationship="viewControllers" id="Vhd-bV-uJf"/>
                         <segue destination="u7h-hX-K06" kind="relationship" relationship="viewControllers" id="s5V-yr-5cC"/>
+                        <segue destination="wdB-zz-mLi" kind="relationship" relationship="viewControllers" id="ZXG-L8-toS"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jG2-Rx-lx7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -448,6 +553,8 @@
     </scenes>
     <resources>
         <image name="Barcode Scanner-50" width="25" height="25"/>
+        <image name="Mark As Favourite Filled-50" width="25" height="25"/>
         <image name="Report Card Filled-50" width="25" height="25"/>
     </resources>
+    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

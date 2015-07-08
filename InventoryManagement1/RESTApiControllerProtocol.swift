@@ -23,7 +23,7 @@ class RESTApiController: NSObject {
     
     let session = NSURLSession.sharedSession()
    
-    let base_url = "http://10.67.17.57:8080/InventoryService/service/inventory/"
+    let base_url = "http://localhost:8080/InventoryService/service/inventory/"
 
     
     func authenticateUser(loginData: LoginData){
