@@ -402,6 +402,7 @@
                     <connections>
                         <segue destination="MGF-Pv-09t" kind="relationship" relationship="viewControllers" id="Vhd-bV-uJf"/>
                         <segue destination="u7h-hX-K06" kind="relationship" relationship="viewControllers" id="s5V-yr-5cC"/>
+                        <segue destination="dtk-M3-V80" kind="relationship" relationship="viewControllers" id="7l7-KC-Rrv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jG2-Rx-lx7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -446,9 +447,85 @@
             </objects>
             <point key="canvasLocation" x="1998.9999999999998" y="-65"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Vws-pG-0Wn">
+            <objects>
+                <viewController id="EdX-X3-Q07" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DPD-hR-run"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ybs-HI-OzS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9RJ-GY-RU1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BHm-vc-rJ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2000" y="1287"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="wEZ-pL-rjf">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="nja-v1-wPA" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="czb-Ey-64a">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="swZ-zD-md1">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="swZ-zD-md1" id="0iW-pt-zgb">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nja-v1-wPA" id="k0Q-xm-wmh"/>
+                            <outlet property="delegate" destination="nja-v1-wPA" id="PX6-6N-9PY"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="N7T-n8-2p8"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Igg-Nk-Aji" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2820" y="623"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Tiu-VO-ovS">
+            <objects>
+                <navigationController id="wvV-aA-M40" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cGh-fW-r8v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nja-v1-wPA" kind="relationship" relationship="rootViewController" id="rgx-he-Hze"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A4i-IE-exk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2000" y="623"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="1Ek-4T-IQD">
+            <objects>
+                <splitViewController id="dtk-M3-V80" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="History" image="Mark As Favourite Filled-50" id="wAr-M8-dzF"/>
+                    <connections>
+                        <segue destination="wvV-aA-M40" kind="relationship" relationship="masterViewController" id="fnd-sY-Yye"/>
+                        <segue destination="EdX-X3-Q07" kind="relationship" relationship="detailViewController" id="dFm-4j-PPC"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fbz-DA-3HE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1180" y="955"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Barcode Scanner-50" width="25" height="25"/>
+        <image name="Mark As Favourite Filled-50" width="25" height="25"/>
         <image name="Report Card Filled-50" width="25" height="25"/>
     </resources>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
