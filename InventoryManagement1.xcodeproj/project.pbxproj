@@ -8,25 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		481770271B2CE0560058B096 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 481770261B2CE0560058B096 /* Images.xcassets */; };
-		483B27F91B2B2EAB004F13EA /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B27F81B2B2EAB004F13EA /* ScanViewController.swift */; };
-		483B27FB1B2B2F2C004F13EA /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B27FA1B2B2F2C004F13EA /* ReportViewController.swift */; };
-		483BEBF21B2A21D000480CE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483BEBF11B2A21D000480CE2 /* AppDelegate.swift */; };
-		483BEBF41B2A21D000480CE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483BEBF31B2A21D000480CE2 /* ViewController.swift */; };
 		483BEBF71B2A21D000480CE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 483BEBF51B2A21D000480CE2 /* Main.storyboard */; };
 		483BEBFC1B2A21D000480CE2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 483BEBFA1B2A21D000480CE2 /* LaunchScreen.xib */; };
 		483BEC081B2A21D000480CE2 /* InventoryManagement1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483BEC071B2A21D000480CE2 /* InventoryManagement1Tests.swift */; };
-		484933851B30948300CED5EE /* InventoryDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 484933831B30948300CED5EE /* InventoryDataModel.xcdatamodeld */; };
-		487667EB1B4D6B9000C0ED37 /* MasterHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487667EA1B4D6B9000C0ED37 /* MasterHistoryViewController.swift */; };
-		487667ED1B4D710B00C0ED37 /* HistoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487667EC1B4D710B00C0ED37 /* HistoryDetailViewController.swift */; };
-		487667EF1B4D73C600C0ED37 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487667EE1B4D73C600C0ED37 /* HistoryCell.swift */; };
-		489CC7291B44435100891A8F /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489CC7281B44435100891A8F /* LoginData.swift */; };
-		489CC7341B4474CF00891A8F /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489CC7331B4474CF00891A8F /* LocalStorage.swift */; };
-		489CC7361B4477EB00891A8F /* InventoryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489CC7351B4477EB00891A8F /* InventoryHelper.swift */; };
-		489CC7381B447D1F00891A8F /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489CC7371B447D1F00891A8F /* Login.swift */; };
-		489CC73E1B44883100891A8F /* Devices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489CC73D1B44883100891A8F /* Devices.swift */; };
-		48BF85741B4B129D0003FD63 /* DeviceDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BF85731B4B129D0003FD63 /* DeviceDetailController.swift */; };
-		48C44B4A1B4AF3C200022BAE /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C44B491B4AF3C200022BAE /* DeviceCell.swift */; };
-		48F530F61B2F49E500C11142 /* RESTApiControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F530F51B2F49E500C11142 /* RESTApiControllerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +37,7 @@
 		483BEC061B2A21D000480CE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		483BEC071B2A21D000480CE2 /* InventoryManagement1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryManagement1Tests.swift; sourceTree = "<group>"; };
 		484933841B30948300CED5EE /* InventoryDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InventoryDataModel.xcdatamodel; sourceTree = "<group>"; };
-		487667EA1B4D6B9000C0ED37 /* MasterHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterHistoryViewController.swift; sourceTree = "<group>"; };
-		487667EC1B4D710B00C0ED37 /* HistoryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailViewController.swift; sourceTree = "<group>"; };
-		487667EE1B4D73C600C0ED37 /* HistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		487EB5AD1B543B85007A81DE /* InventoryManagement1Tests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "InventoryManagement1Tests-Bridging-Header.h"; sourceTree = "<group>"; };
 		489CC7281B44435100891A8F /* LoginData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
 		489CC7331B4474CF00891A8F /* LocalStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalStorage.swift; path = ../LocalStorage.swift; sourceTree = "<group>"; };
 		489CC7351B4477EB00891A8F /* InventoryHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InventoryHelper.swift; path = ../InventoryHelper.swift; sourceTree = "<group>"; };
@@ -116,6 +98,7 @@
 				481770261B2CE0560058B096 /* Images.xcassets */,
 				483BEBFA1B2A21D000480CE2 /* LaunchScreen.xib */,
 				483BEBEF1B2A21D000480CE2 /* Supporting Files */,
+				487EB5AD1B543B85007A81DE /* InventoryManagement1Tests-Bridging-Header.h */,
 			);
 			path = InventoryManagement1;
 			sourceTree = "<group>";
@@ -149,11 +132,9 @@
 			isa = PBXGroup;
 			children = (
 				483B27F81B2B2EAB004F13EA /* ScanViewController.swift */,
-				487667EA1B4D6B9000C0ED37 /* MasterHistoryViewController.swift */,
 				483BEBF31B2A21D000480CE2 /* ViewController.swift */,
 				483B27FA1B2B2F2C004F13EA /* ReportViewController.swift */,
 				48BF85731B4B129D0003FD63 /* DeviceDetailController.swift */,
-				487667EC1B4D710B00C0ED37 /* HistoryDetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -189,7 +170,6 @@
 			children = (
 				48C44B491B4AF3C200022BAE /* DeviceCell.swift */,
 				489CC7351B4477EB00891A8F /* InventoryHelper.swift */,
-				487667EE1B4D73C600C0ED37 /* HistoryCell.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -201,7 +181,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 483BEC0B1B2A21D000480CE2 /* Build configuration list for PBXNativeTarget "InventoryManagement1" */;
 			buildPhases = (
-				483BEBE81B2A21D000480CE2 /* Sources */,
 				483BEBE91B2A21D000480CE2 /* Frameworks */,
 				483BEBEA1B2A21D000480CE2 /* Resources */,
 			);
@@ -291,29 +270,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		483BEBE81B2A21D000480CE2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				489CC7341B4474CF00891A8F /* LocalStorage.swift in Sources */,
-				484933851B30948300CED5EE /* InventoryDataModel.xcdatamodeld in Sources */,
-				489CC7291B44435100891A8F /* LoginData.swift in Sources */,
-				487667EB1B4D6B9000C0ED37 /* MasterHistoryViewController.swift in Sources */,
-				489CC7381B447D1F00891A8F /* Login.swift in Sources */,
-				487667ED1B4D710B00C0ED37 /* HistoryDetailViewController.swift in Sources */,
-				489CC73E1B44883100891A8F /* Devices.swift in Sources */,
-				48F530F61B2F49E500C11142 /* RESTApiControllerProtocol.swift in Sources */,
-				483B27FB1B2B2F2C004F13EA /* ReportViewController.swift in Sources */,
-				483BEBF41B2A21D000480CE2 /* ViewController.swift in Sources */,
-				489CC7361B4477EB00891A8F /* InventoryHelper.swift in Sources */,
-				483BEBF21B2A21D000480CE2 /* AppDelegate.swift in Sources */,
-				48BF85741B4B129D0003FD63 /* DeviceDetailController.swift in Sources */,
-				483B27F91B2B2EAB004F13EA /* ScanViewController.swift in Sources */,
-				487667EF1B4D73C600C0ED37 /* HistoryCell.swift in Sources */,
-				48C44B4A1B4AF3C200022BAE /* DeviceCell.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		483BEBFD1B2A21D000480CE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -439,12 +395,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				INFOPLIST_FILE = InventoryManagement1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -452,9 +412,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				INFOPLIST_FILE = InventoryManagement1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -465,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -476,6 +440,8 @@
 				INFOPLIST_FILE = InventoryManagement1Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "InventoryManagement1/InventoryManagement1Tests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InventoryManagement1.app/InventoryManagement1";
 			};
 			name = Debug;
@@ -484,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -491,6 +458,7 @@
 				INFOPLIST_FILE = InventoryManagement1Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "InventoryManagement1/InventoryManagement1Tests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InventoryManagement1.app/InventoryManagement1";
 			};
 			name = Release;

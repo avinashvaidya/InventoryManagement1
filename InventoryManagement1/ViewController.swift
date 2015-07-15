@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 
+
 class ViewController: UIViewController, RESTApiControllerProtocol {
     
 
@@ -21,6 +22,7 @@ class ViewController: UIViewController, RESTApiControllerProtocol {
     @IBOutlet weak var loginError: UILabel!
     
     var isLoginSuccess: Bool = false
+    
     
     override func viewDidLoad() {
         // Do any additional setup after loading the view, typically from a nib.
@@ -61,8 +63,10 @@ class ViewController: UIViewController, RESTApiControllerProtocol {
         }
     }
    
+
   
     @IBAction func loginAction(sender: AnyObject) {
+        
         if username.text.isEmpty || password.text.isEmpty   {
             let alert = UIAlertView()
             alert.title = "Incorrect credentials"
@@ -79,6 +83,10 @@ class ViewController: UIViewController, RESTApiControllerProtocol {
            
         }
         
+    }
+    
+    private func validateCred(username: String, password: String) -> Bool{
+     return false
     }
     
     override func shouldPerformSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> Bool {

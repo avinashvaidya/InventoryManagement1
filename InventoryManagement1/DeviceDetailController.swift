@@ -19,6 +19,7 @@ class DeviceDetailController: UIViewController {
         super.viewDidLoad()
         // Do view setup here.
         serialNumber.text = serialNum
+       
     }
     
 }
